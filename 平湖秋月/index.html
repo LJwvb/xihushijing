@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>平湖秋月</title>
+
+
+<link rel="stylesheet" href="css/style.css">
+
+
+
+
+</head>
+<body>
+
+
+<div id="wrap">
+  <a href="img/2.jpg" class="hb" target="_blank">
+	<div class="c">
+	  <img src="img/2.jpg" alt=""/>
+	
+	</div>
+  </a>
+  <div class="fullBg">
+	<img src="img/2.jpg" alt=""/>
+  </div>
+  <a href="img/3.jpg" class="hb" target="_blank">
+	<div class="c">
+	  <img src="img/3.jpg" alt=""/>
+	  
+	</div>
+  </a>
+  <div class="fullBg">
+	<img src="img/3.jpg" alt=""/>
+  </div>
+  <a href="img/4.jpg" class="hb" target="_blank">
+	<div class="c">
+	  <img src="img/4.jpg" alt=""/>
+	</div>
+  </a>
+  <div class="fullBg">
+	<img src="img/4.jpg" alt=""/>
+  </div>
+ 
+ 
+</div>
+<div class="btn">
+  <a href="../piclist.html">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        返回
+    </a>
+	</div>
+<script src="../js/jquery-1.12.4.min.js"></script>
+<script >
+	$(document).ready(function(){
+	  var docWidth = $('body').width(),
+		  $wrap = $('#wrap'),
+		  $images = $('#wrap .hb'),
+		  slidesWidth = $wrap.width();
+	  
+	  $(window).on('resize', function(){
+		docWidth = $('body').width();
+		slidesWidth = $wrap.width();
+	  })
+	  
+	  $(document).mousemove(function(e) {
+		var mouseX = e.pageX,
+			offset = mouseX / docWidth * slidesWidth - mouseX / 2;
+		
+		$images.css({
+				  'transform': 'translate3d(' + -offset + 'px,0,0)'
+		});
+	  });
+	})
+</script>
+
+</body>
+</html>
