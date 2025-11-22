@@ -7,7 +7,7 @@ $(document).ready(function(){
   $(window).on('resize', function(){
     docWidth = $('body').width();
     slidesWidth = $wrap.width();
-  })
+  });
   
   $(document).mousemove(function(e) {
     var mouseX = e.pageX,
@@ -17,4 +17,4 @@ $(document).ready(function(){
               'transform': 'translate3d(' + -offset + 'px,0,0)'
     });
   });
-})
+});
