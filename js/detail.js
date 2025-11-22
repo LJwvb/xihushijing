@@ -7,14 +7,14 @@ $(document).ready(function(){
   $(window).on('resize', function(){
     docWidth = $('body').width();
     slidesWidth = $wrap.width();
-  })
+  });
   
   $(document).mousemove(function(e) {
     var mouseX = e.pageX,
         offset = mouseX / docWidth * slidesWidth - mouseX / 2;
     
     $images.css({
-              'transform': 'translate3d(' + -offset + 'px,0,0)'
+      'transform': 'translate3d(' + -offset + 'px,0,0)'
     });
   });
-})
+});
