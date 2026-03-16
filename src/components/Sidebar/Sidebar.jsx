@@ -5,7 +5,7 @@ import styles from './Sidebar.module.css'
 export default function Sidebar() {
   return (
     <aside className={styles.sidebar}>
-      <div className={styles.sceicSection}>
+      <div className={styles.scenicSection}>
         <div className={styles.sectionHeader}>
           <h3 className={styles.sectionTitle}>景区景点</h3>
           <hr className={styles.divider} />

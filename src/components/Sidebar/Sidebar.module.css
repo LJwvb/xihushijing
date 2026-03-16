@@ -3,7 +3,7 @@
   flex-shrink: 0;
 }
 
-.sceicSection {
+.scenicSection {
   background: var(--color-primary);
   border-radius: var(--border-radius);
   overflow: hidden;
