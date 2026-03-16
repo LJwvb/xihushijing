@@ -1,0 +1,40 @@
+.contactBody {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 32px;
+}
+
+.contactCard {
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  padding: 24px;
+  text-align: center;
+  transition: var(--transition);
+}
+
+.contactCard:hover {
+  border-color: var(--color-primary);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.contactIcon {
+  font-size: 32px;
+  margin-bottom: 12px;
+}
+
+.contactLabel {
+  font-size: 13px;
+  color: var(--color-text-light);
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.contactValue {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--color-primary);
+}

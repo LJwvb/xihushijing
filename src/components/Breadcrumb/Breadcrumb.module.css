@@ -1,0 +1,24 @@
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: var(--color-text-light);
+}
+
+.link {
+  color: var(--color-primary);
+  transition: var(--transition);
+}
+
+.link:hover {
+  color: var(--color-accent);
+}
+
+.separator {
+  color: var(--color-border);
+}
+
+.current {
+  color: var(--color-text-light);
+}

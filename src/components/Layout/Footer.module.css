@@ -1,0 +1,86 @@
+.footer {
+  background: var(--color-footer-bg);
+  color: rgba(255, 255, 255, 0.85);
+  padding: 48px 0 32px;
+}
+
+.inner {
+  display: flex;
+  align-items: flex-start;
+  gap: 48px;
+}
+
+.qrCode {
+  flex-shrink: 0;
+  text-align: center;
+}
+
+.qrCode img {
+  border-radius: var(--border-radius-sm);
+  border: 2px solid rgba(255,255,255,0.2);
+}
+
+.qrCode p {
+  margin-top: 8px;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+}
+
+.content {
+  flex: 1;
+}
+
+.footerNav {
+  display: flex;
+  gap: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.footerNavLink {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 15px;
+  padding-right: 32px;
+  transition: var(--transition);
+}
+
+.footerNavLink:hover {
+  color: var(--color-accent);
+}
+
+.footerInfo {
+  line-height: 2;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.socialLinks {
+  display: flex;
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.socialIcon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition);
+  overflow: hidden;
+}
+
+.socialIcon:hover {
+  background: var(--color-accent);
+  transform: translateY(-2px);
+}
+
+.socialIcon img {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+}

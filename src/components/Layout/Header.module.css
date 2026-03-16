@@ -1,0 +1,27 @@
+.header {
+  background: var(--color-white);
+  height: 100px;
+  box-shadow: var(--shadow-sm);
+}
+
+.inner {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+}
+
+.logo {
+  width: 400px;
+  height: 100px;
+  background: url('/img/logo.png') no-repeat left center / contain;
+}
+
+.logoDecor {
+  width: 450px;
+  height: 100px;
+  background: url('/img/logo.jpg') no-repeat right center / contain;
+}
