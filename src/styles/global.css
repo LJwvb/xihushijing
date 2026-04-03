@@ -1,0 +1,116 @@
+/* ===== CSS Reset & Variables ===== */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --color-primary: #2d6a4f;
+  --color-primary-dark: #1b4332;
+  --color-primary-light: #40916c;
+  --color-accent: #d4a017;
+  --color-accent-hover: #b8860b;
+  --color-text: #2c3e50;
+  --color-text-light: #6c757d;
+  --color-bg: #f8f9fa;
+  --color-white: #ffffff;
+  --color-border: #e0e0e0;
+  --color-footer-bg: #1b4332;
+
+  --font-primary: 'PingFang SC', 'Microsoft YaHei', 'STXihei', sans-serif;
+  --font-size-base: 16px;
+
+  --container-width: 1200px;
+  --border-radius: 8px;
+  --border-radius-sm: 4px;
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.12);
+  --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.16);
+  --transition: all 0.3s ease;
+}
+
+html {
+  font-size: var(--font-size-base);
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-primary);
+  color: var(--color-text);
+  background: var(--color-bg);
+  line-height: 1.6;
+  min-width: 1200px;
+}
+
+img {
+  max-width: 100%;
+  border: 0;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+p {
+  text-align: justify;
+}
+
+.container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.section-title .title-en {
+  display: block;
+  font-size: 13px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--color-primary);
+  margin-bottom: 8px;
+}
+
+.section-title .title-zh {
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.text-truncate {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 12px 28px;
+  background: var(--color-accent);
+  color: var(--color-white);
+  border-radius: var(--border-radius-sm);
+  font-size: 15px;
+  font-weight: 500;
+  transition: var(--transition);
+  cursor: pointer;
+  border: none;
+}
+
+.btn-primary:hover {
+  background: var(--color-accent-hover);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-sm);
+}
